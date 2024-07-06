@@ -1,17 +1,88 @@
 @media (min-width: 375px) {
   .container {
     max-width: 375px;
-    margin-top: 20px;
+    margin-top: 32px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    align-items: center;
     justify-content: center;
+  }
+
+  .hero {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 32px;
+  }
+
+  .hero h1 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: -0.04em;
+    color: #101828;
+  }
+
+  .hero p {
+    font-size: 20px;
+    color: #333;
+  }
+
+  .miniContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .about h2,
+  .services h2 {
+    font-size: 30px;
+    color: #101828;
+  }
+
+  .about p {
+    color: #333;
+  }
+
+  .services {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .service {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 800px;
+  }
+
+  .service h3 {
+    margin-top: 0;
+    color: #333;
+  }
+
+  .service p {
+    margin: 0;
+    color: #666;
   }
 }
 
 @media (min-width: 1440px) {
   .container {
     min-width: 100%;
+  }
+
+  .about > p {
+    width: 842px;
   }
 }

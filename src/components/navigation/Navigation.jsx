@@ -1,5 +1,5 @@
 import { NavLink, Outlet } from 'react-router-dom';
-import { FiFilm } from 'react-icons/fi';
+import { FaCaravan } from 'react-icons/fa';
 import css from './Navigation.module.css';
 
 export default function Navigation() {
@@ -8,13 +8,9 @@ export default function Navigation() {
       <header className={css.header}>
         <nav className={css.navigation}>
           <NavLink className={css.navLink} to="/">
-            <span className={css.iconContainer}>
-              <FiFilm className={css.icon} />
-              <FiFilm className={css.nextIcon} />
-            </span>
-            <span>
-              <h2 className={css.title}>Fimoteka</h2>
-            </span>
+            <FaCaravan className={css.icon} />
+
+            <h2 className={css.title}>Voyage</h2>
           </NavLink>
 
           <ul className={css.list}>
@@ -29,9 +25,17 @@ export default function Navigation() {
             <li>
               <NavLink
                 className={({ isActive }) => (isActive ? css.active : css.link)}
-                to="/movies"
+                to="/catalog"
               >
-                Movies
+                Catalog
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                className={({ isActive }) => (isActive ? css.active : css.link)}
+                to="/favorites"
+              >
+                Favorites
               </NavLink>
             </li>
           </ul>

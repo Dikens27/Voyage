@@ -10,7 +10,7 @@
 }
 
 .header {
-  background-color: rgb(41, 44, 51);
+  background-color: transparent;
 
   background-size: cover;
   background-repeat: no-repeat;
@@ -26,7 +26,8 @@
 }
 
 .link {
-  color: #fff;
+  color: #101828;
+
   font-size: var(--font-medium);
   font-weight: 700;
   margin: 0;
@@ -41,12 +42,12 @@
 }
 
 .link:hover {
-  color: #ff6b08;
+  color: #008080;
   transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .active {
-  color: #ff6b08;
+  color: #008080;
   background-color: var(--color-accent);
 
   padding: 6px 12px;
@@ -69,7 +70,7 @@
 }
 
 .navLink {
-  color: #fff;
+  color: #101828;
   align-items: center;
   box-sizing: border-box;
   color: rgb(255, 255, 255);
@@ -79,57 +80,19 @@
   fill: rgb(255, 255, 255);
 }
 
-.iconContainer {
-  position: relative;
-  width: 22px;
-  height: 22px;
-  overflow: hidden;
-}
-
-@keyframes slideOut {
-  0% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-22px);
-    opacity: 0;
-  }
-}
-
-@keyframes slideIn {
-  0% {
-    transform: translateY(22px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
 .icon {
-  position: absolute;
-  top: 0;
-  left: 0;
+  padding-top: 4px;
   width: 22px;
   height: 22px;
-  animation: slideOut 1.5s infinite;
-  animation-delay: 0;
+  stroke: #101828;
+  fill: #101828;
 }
 
-.nextIcon {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 22px;
-  height: 22px;
-  opacity: 0;
-  animation: slideIn 1.5s infinite;
-  animation-delay: 0;
+.title {
+  color: #101828;
 }
 
 .title:hover {
-  color: #ff6b08;
+  color: #008080;
   transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }

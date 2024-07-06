@@ -1,7 +1,13 @@
 :root {
-  font-family: 'Roboto Mono', monospace, sans-serif;
+  font-family: 'Inter', sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  --main: #101828;
+  --text: #475467;
+  --button: #e44848;
+  --rating: #ffc531;
+  --block-features: #f2f4f7;
+  --inputs: #f7f7f7;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -10,21 +16,7 @@
 }
 
 body {
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.5) 0%,
-      rgba(0, 0, 0, 0.55) 25%,
-      rgba(0, 0, 0, 0.6) 50%,
-      rgba(0, 0, 0, 0.7) 75%,
-      rgba(0, 0, 0, 0.8) 100%
-    ),
-    url(/home-them-dark-tab.8c1598a1.jpg);
-  background-clip: border-box, border-box;
-  background-attachment: fixed, fixed;
-  background-color: rgb(47, 47, 47);
-  background-repeat: no-repeat;
-  background-origin: padding-box, padding-box;
-  background-position-x: 50%, 50%;
-  background-position-y: 50%, 50%;
+  background-color: #e0f7fa;
   background-size: cover;
   box-sizing: border-box;
   color: rgb(255, 255, 255);

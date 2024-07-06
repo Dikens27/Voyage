@@ -1,7 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import css from './MovieList.module.css';
 
-export default function MovieList({ movies, urlPath }) {
+export default function CatalogList({ movies, urlPath }) {
   const location = useLocation();
   return (
     <ul className={css.list}>

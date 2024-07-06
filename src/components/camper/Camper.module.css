@@ -1,0 +1,164 @@
+.bigContainer {
+  border: 1px solid rgba(16, 24, 40, 0.2);
+  border-radius: 20px;
+  padding: 24px;
+  width: 888px;
+  height: 358px;
+  display: flex;
+  gap: 24px;
+}
+
+.camperImg {
+  border-radius: 10px;
+  width: 290px;
+  height: 310px;
+  background-color: var(--text);
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.titleAndRating {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.titleAndPrice {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.25;
+  color: var(--main);
+}
+
+.priceContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.price {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.25em;
+  color: var(--main);
+}
+
+.like {
+  border: none;
+  background-color: transparent;
+}
+
+.iconLike {
+  stroke-width: 2.3px;
+  stroke: var(--main);
+  fill: transparent;
+}
+
+.ratingContainer {
+  display: flex;
+  gap: 16px;
+}
+
+.ratingAndLocation {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.iconRating {
+  stroke: 1.2px solid var(--rating);
+  width: 16px;
+  height: 16px;
+  fill: var(--rating);
+}
+
+.textRating {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: var(--main);
+}
+
+.iconMap {
+  fill: transparent;
+  stroke: var(--main);
+}
+
+.textLocation {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--main);
+}
+
+.description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+.featuresList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 8px;
+}
+
+.featuresItem {
+  box-sizing: border-box;
+  border-radius: 100px;
+  padding: 12px 18px;
+  width: max-content;
+  height: 44px;
+  background: var(--block-features);
+  mix-blend-mode: multiply;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconItem {
+  fill: transparent;
+  stroke: var(--main);
+}
+
+.iconItem2 {
+  stroke: var(--main);
+  stroke-width: 0;
+}
+
+.textItem {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  color: var(--main);
+}
+
+.buttonMore {
+  border-radius: 200px;
+  padding: 16px 40px;
+  width: 166px;
+  height: 56px;
+  background: var(--button);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: #fff;
+  border: none;
+}
