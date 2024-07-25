@@ -2,6 +2,7 @@
   border: 1px solid rgba(16, 24, 40, 0.2);
   border-radius: 20px;
   padding: 24px;
+  box-sizing: border-box;
   width: 888px;
   height: 358px;
   display: flex;
@@ -12,7 +13,6 @@
   border-radius: 10px;
   width: 290px;
   height: 310px;
-  background-color: var(--text);
 }
 
 .contentContainer {

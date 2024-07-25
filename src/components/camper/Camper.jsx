@@ -1,18 +1,25 @@
 import css from './Camper.module.css';
 import Icon from '../../shared/icon/Icon';
 
-export default function Camper() {
+export default function Camper({ camper }) {
+  const divStyle = {
+    backgroundImage: `url(${camper.gallery[0]})`,
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+  };
+
   return (
     <div className={css.bigContainer}>
-      <img className={css.camperImg} src="" alt="" />
+      <div style={divStyle} className={css.camperImg} alt={camper.name}></div>
 
       <div className={css.contentContainer}>
         <div className={css.titleAndRating}>
           <div className={css.titleAndPrice}>
-            <h3 className={css.title}>Mavericks</h3>
+            <h3 className={css.title}>{camper.name}</h3>
 
             <div className={css.priceContainer}>
-              <p className={css.price}>€8000.00</p>
+              <p className={css.price}>€{camper.price}</p>
               <button className={css.like}>
                 <Icon
                   id="icon-heart"
@@ -34,7 +41,9 @@ export default function Camper() {
                 className={css.iconRating}
                 alt="icon-rating"
               />
-              <p className={css.textRating}>4.4(2 Reviews)</p>
+              <p className={css.textRating}>
+                {camper.rating}({camper.reviews.length} Reviews)
+              </p>
             </div>
 
             <div className={css.ratingAndLocation}>
@@ -45,13 +54,13 @@ export default function Camper() {
                 className={css.iconMap}
                 alt="icon-map-pin"
               />
-              <p className={css.textLocation}>Kyiv, Ukraine</p>
+              <p className={css.textLocation}>{camper.location}</p>
             </div>
           </div>
         </div>
 
         <p className={css.description}>
-          Embrace simplicity and freedom with the Mavericks panel
+          {camper.description.slice(0, 65) + '...'}
         </p>
 
         <ul className={css.featuresList}>
